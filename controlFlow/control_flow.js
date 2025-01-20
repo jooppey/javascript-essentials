@@ -7,6 +7,10 @@ let userMessage;
 let userType = "subscriber";
 let userCategory;
 
+let isAuthenticated = false;
+
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
 if (isLoggedIn) {
 if (userRole === "admin") {
     accessLevel = "Full access granted";
@@ -40,3 +44,5 @@ console.log("Access Level:", accessLevel);
 console.log("User Message:", userMessage);
 
 console.log("User Category:", userCategory);
+
+console.log("Authentication Status:", authenticationStatus);
